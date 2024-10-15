@@ -1,0 +1,20 @@
+{
+    "projecto1": [
+        { "titulo": "Software de inicio de seción", "img": "../img/proyect/proyecto_1.png", "descripción": "Descripción: Un proyecto de software que permite gestionar el inicio de sesión de usuarios en un sistema. Puede incluir funcionalidades de autenticación, gestión de usuarios y control de acceso a diferentes áreas del sistema." }
+    ],
+    "projecto2": [
+        { "titulo": "Software para administracion de un gimnacio", "img": "../img/proyect/proyecto_2.png", "descripción": "Descripción: Un sistema diseñado para facilitar la administración de un gimnasio, permitiendo gestionar membresías, pagos y la gestión de clientes y empleados." }
+    ],
+    "projecto3": [
+        { "titulo": "Software para encontrar las rutas mas cortas", "img": "../img/proyect/proyecto_3.png", "descripción": "Descripción: Una aplicación que calcula y encuentra las rutas más cortas entre dos puntos." }
+    ],
+    "projecto4": [
+        { "titulo": "Software calculadora (Estadisticas II)", "img": "../img/proyect/proyecto_4.png", "descripción": "Descripción: Una calculadora enfocada en resolver problemas de estadística, diseñada para un curso o materia de Estadísticas II, capaz de realizar cálculos complejos como desviación estándar, varianza, regresión, entre otros" }
+    ],
+    "projecto5": [
+        { "titulo": "Juego Carros", "img": "../img/proyect/proyecto_5.png", "descripción": "Descripción: Un juego interactivo de carreras de autos." }
+    ],
+    "projecto6": [
+        { "titulo": "Juego Warplanes", "img": "../img/proyect/proyecto_6.png", "descripción": "Descripción: Un juego de aviones de guerra donde los jugadores controlan aviones en combates aéreos." }
+    ]
+}

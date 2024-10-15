@@ -1,0 +1,137 @@
+.bodylingh {
+    background-color: #ffffff;
+}
+
+.bodylingh header {
+    background-color: #c0c0c0;
+    color: #000000;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.bodylingh a {
+    background-color: #c0c0c0;
+    border: 1px solid #c0c0c0;
+    color: #000000;
+}
+
+.bodylingh ul {
+    background-color: #c0c0c0;
+}
+
+.bodylingh h1, .bodylingh h2, .bodylingh p {
+    color: #000000;
+}
+
+.bodylingh nav ul li a {
+    color: #000000;
+    background-color: #c0c0c0;
+}
+
+.bodylingh nav ul li a:hover {
+    background-color: #d0d0d0;
+}
+
+.bodylingh .visible {
+    background-color: #c0c0c0;
+}
+
+.bodylingh .linea {
+    background-color: #000000;
+}
+
+.bodylingh #menu {
+    background-color: #c0c0c0;
+}
+
+.bodylingh #menu li a {
+    color: #000000;
+    background-color: #c0c0c0;
+}
+
+.bodylingh #menu li a:hover {
+    background-color: #d0d0d0;
+}
+
+.bodylingh .carrusel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+}
+
+.bodylingh .carrusel-caption p {
+    color: #ffffff;
+}
+
+.bodylingh .boton-carrusel {
+    background-color: #c0c0c0;
+    color: #000000;
+}
+
+.bodylingh .boton-carrusel:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bodylingh .punto {
+    background-color: #bbb;
+}
+
+.bodylingh .punto-activo {
+    background-color: #5a4eff;
+}
+
+.bodylingh section#HOME {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.bodylingh section#SOBRE_MI
+{
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.bodylingh section#CONTACTOS
+{
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.bodylingh section#PROYECTOS 
+{
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.bodylingh .project {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.bodylingh .carrusel-item img {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.bodylingh form label {
+    color: #000000;
+}
+
+.bodylingh form input, form textarea
+{
+    background-color: #f0f0f0;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.bodylingh form button {
+    background-color: #c0c0c0;
+    color: #000000;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.bodylingh form button:hover {
+    background-color: #d0d0d0;
+}
+
+.bodylingh footer p {
+    background-color: #c0c0c0;
+    color: #000000;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.bodylingh .anterior {
+    background-color: #c0c0c0;
+}

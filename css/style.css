@@ -1,0 +1,346 @@
+@import url("./LinghMode.css");
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: auto;
+    padding: 0;
+    margin: auto auto;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #121212;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+p {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    margin-top: 20px;
+    color: white;
+}
+
+header {
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    text-align: center;
+    border: 4px solid darkslategrey;
+    background-color: darkslategrey;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: darkslategrey;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    background-color: darkslategrey;
+    font-size: 2vw;
+    border: 1px solid darkslategrey;
+}
+
+.invisible {
+    display: none;
+}
+
+a img {
+    width: 80px;
+}
+
+#modos {
+    right: 0vh;
+    top: 1vh;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0);
+    color: white; 
+    z-index: 1;
+}
+
+.anterior {
+    position: absolute;
+    top: 50%;
+    right: 0vh;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    padding: 10px;
+    background-color: darkslategrey;
+    cursor: pointer;
+}
+
+.antes {
+    width: 25px;
+}
+
+nav ul li:first-child a {
+    font-size: 26px;
+}
+
+.menu-hamburguesa {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    transform: translateX(4%);
+    top: 0.5vh;
+    border-radius: 8px;
+    background-color: #333;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: white;
+    display: none;
+    z-index: 1;
+}
+
+
+.visible {
+    justify-content: center;
+    align-items: center;
+    line-height: normal;
+    display: flex;
+}
+
+#menu {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: darkslategrey;
+    position: fixed;
+    right: auto;
+    top: 0%;
+    width: 90%;
+    height: 100%;
+    display: none;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+#menu.menu-visible {
+    display: block;
+}
+
+#menu li {
+    margin-bottom: 10px;
+}
+
+#menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    background-color: darkslategrey;
+    border-radius: 5px;
+}
+
+#menu li a:hover {
+    background-color: gray;
+}
+
+section#HOME {
+    height: 100vh;
+    padding: 20px;
+    border: 1px solid white;
+}
+
+section#SOBRE_MI {
+    height: 100vh;
+    padding: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    margin-top: 20px;
+}
+
+section#PROYECTOS {
+    height: 120vh;
+    padding: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    margin-top: 20px;
+}
+
+.project {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.carrusel {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carrusel-interno {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carrusel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.carrusel-item img {
+    width: 100%;
+    height: 74vh;
+    border-radius: 10px;
+}
+
+.carrusel-caption {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2%;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 90%;
+    width: 60%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 90%;
+}
+
+.carrusel-caption p {
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    margin-top: 20%;
+    color: white;
+}
+
+.carrusel:hover .carrusel-caption {
+    opacity: 1;
+}
+
+.controles-carrusel {
+    position: absolute;
+    top: 50%;
+    width: 89%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.boton-carrusel {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: 12.3%;
+}
+
+.boton-carrusel:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.controles-carrusel img {
+    width: 20px;
+}
+
+.contenedor-puntos {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    top: 77%;
+    transform: translateX(-50%);
+    text-align: center;
+    display: flex;
+}
+
+.punto {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.punto-activo {
+    background-color: rgb(90, 78, 255);
+}
+
+section#CONTACTOS {
+    height: 89vh;
+    padding: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px 0;
+    color: white;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #777;
+}
+
+footer p {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    border: 1px solid rgb(255, 255, 255);
+    margin: auto auto;
+}

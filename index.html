@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Lista de Proyectos
+    </title>
+    <script src="js/script.js" defer></script>
+    <link rel="" href="./html/db/mens.txt">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="imagen-icon" href="./img/ico/icono.jpg" >
+
+  </head>
+  <body id="color">
+
+    <button type="button" id="main" class="menu-hamburguesa" onclick="toggleMenu()">
+      <h1>☰</h1>
+    </button>
+
+    <ul id="menu" class="menu-oculto">
+
+      <li>
+        <a href="#HOME" onclick="invisible()">
+          HOME
+        </a>
+      </li>
+      <li>
+        <a href="#SOBRE_MI" onclick="invisible()">
+          SOBRE MÍ
+        </a>
+      </li>
+      <li>
+        <a href="#PROYECTOS" onclick="invisible()">
+          PROYECTOS
+        </a>
+      </li>
+      <li>
+        <a href="#CONTACTOS" onclick="invisible()">
+          CONTACTOS
+        </a>
+      </li>
+
+      <a href="#modo" id="rez">
+          <button class="anterior" id="ocultar" onclick="invisible()">
+              <img class="antes" src="./img/button/antes.png">
+          </button>
+      </a>
+    
+    </ul>
+
+    <a href="#modo">
+      <button type="button" id="modos">
+        <img id="LinghtMode" src="./img/button/LinghtMode.jpeg">
+      </button>
+    </a>
+
+    <header id="invi">
+
+      <nav>
+
+        <ul>
+
+          <li>
+            <a href="#HOME">
+              HOME
+            </a>
+          </li>
+          <li>
+            <a href="#SOBRE_MI">
+              SOBRE MÍ
+            </a>
+          </li>
+          <li>
+            <a href="#PROYECTOS">
+              PROYECTOS
+            </a>
+          </li>
+          <li>
+            <a href="#CONTACTOS">
+              CONTACTOS
+            </a>
+          </li>
+
+        </ul>
+        
+      </nav>
+
+    </header>
+    
+
+    <section id="HOME">
+      <h2>
+        Home
+      </h2>
+      <p>
+        Hola, soy un desarrollador apasionado con experiencia en diferentes áreas de la programación. Me especializo en la creación de software eficiente y soluciones personalizadas para problemas complejos.
+      </p>
+    </section>
+
+    <section id="SOBRE_MI">
+      <h2>
+        Sobre mí
+      </h2>
+      <p>
+        Hola, soy un desarrollador apasionado con experiencia en diferentes áreas de la programación. Me especializo en la creación de software eficiente y soluciones personalizadas para problemas complejos.
+      </p>
+    </section>
+
+    <section id="PROYECTOS">
+      <h1>
+        Proyectos
+      </h1>
+      <p>
+        Cada proyecto pertenece a diferentes áreas del desarrollo de software, como la administración, juegos, herramientas de productividad o educativas, lo que refleja una amplia gama de aplicaciones.
+      </p>
+
+      <div class="carrusel">
+        <div class="carrusel-interno" id="elementosCarrusel">
+            <!-- Los items del carrusel se generarán aquí -->
+        </div>
+        <div class="controles-carrusel">
+          <button class="boton-carrusel" id="botonAnterior">
+            <img src="./img/button/antes.png">
+          </button>
+          <button class="boton-carrusel" id="botonSiguiente">
+            <img src="./img/button/despues.png">
+          </button>
+        </div>
+        <div class="contenedor-puntos">
+          <span id="punto" class="punto" onclick="diapositivaActual(1)"></span>
+          <span id="punto" class="punto" onclick="diapositivaActual(2)"></span>
+          <span id="punto" class="punto" onclick="diapositivaActual(3)"></span>
+          <span id="punto" class="punto" onclick="diapositivaActual(4)"></span>
+          <span id="punto" class="punto" onclick="diapositivaActual(5)"></span>
+          <span id="punto" class="punto" onclick="diapositivaActual(6)"></span>
+      </div>
+      </div>
+
+    </section>
+
+    <section id="CONTACTOS">
+      <h2>
+        Contacto
+      </h2>
+      <form id="miFormulario">
+        <label for="name">
+          Nombre:
+        </label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">
+          Email:
+        </label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">
+          Mensaje:
+        </label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">
+          Enviar
+        </button>
+      </form>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2024 Mi Sitio Web. Todos los derechos reservados.
+      </p>
+    </footer>
+  </body>
+</html>
